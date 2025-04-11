@@ -60,14 +60,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // add dependencies
-    dependencies {
-
-        implementation("com.squareup.retrofit2:retrofit:2.9.0")
-        implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-        implementation("com.squareup.okhttp3:okhttp:4.9.3") // For logging and network calls.
-        implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
-        implementation("androidx.recyclerview:recyclerview:1.2.1") // For displaying the list
-        implementation("androidx.cardview:cardview:1.0.0") //For styling
-    }
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.okhttp) // For logging and network calls.
+    implementation(libs.logging.interceptor)
+    implementation(libs.androidx.recyclerview.v121) // For displaying the list
+    implementation(libs.androidx.cardview) //For styling
 }
